@@ -45,6 +45,7 @@ def gengraph():
     intersection = set([]) # record intersections
     crossset = {}
     edge = []
+    global V
     
     for i in range(len(pairlist) - 1):
         for j in range(i + 1, len(pairlist)):
@@ -84,7 +85,6 @@ def gengraph():
             delnode.append(node)
 
     for n in delnode:
-        global V
         del V[n]
 
     newV = {}
