@@ -1,5 +1,9 @@
 import re
 import sys
+# generates a dictionary where street names are keys and street nodes are valus
+streets = {}
+V = {}
+I = 1 # index for V. Suppose the index of deleted nodes are not reusable. 
 
 def picknum(snode):
     #print "snode:", snode
@@ -235,10 +239,6 @@ def dist(node1, node2):
 
 
 
-# generates a dictionary where street names are keys and street nodes are valus
-streets = {}
-V = {}
-I = 1 # index for V. Suppose the index of deleted nodes are not reusable. 
 
 
 while True:
